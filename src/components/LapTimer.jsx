@@ -82,11 +82,11 @@ const LapTimer = () => {
                 <button onClick={resetTimer} >Reset</button>
             </div>
             <div>
-
-                {laps.map((lapTime, index) => (
-                    <p key={index}>{formatTime(lapTime)}</p>
-                ))}
-
+                <ul>
+                    {laps.map((lapTime, index) => (
+                        <li key={index}>{formatTime(lapTime)}</li>
+                    ))}
+                </ul>
             </div>
         </div>
     );
